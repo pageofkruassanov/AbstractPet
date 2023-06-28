@@ -9,8 +9,8 @@ protected:
 	string type;
 public:
 	Pet(string name, string sound, string type) : name{ name }, sound{ sound }, type{ type } {};
-	virtual void Show();
-	virtual void Type();
-	virtual void Sound();
+	virtual void Show() = 0;
+	virtual void Type() = 0;
+	virtual void Sound() = 0;
 };
 
